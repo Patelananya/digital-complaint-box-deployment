@@ -24,12 +24,12 @@ const connection = mysql.createConnection({
 
 
 // Connect to the database
-connection.connect((err) => {
-  if (err) {
-    console.error('Error connecting to the database:', err);
-    process.exit(1);
-  }
-  console.log('Successfully connected to the database.');
-});
+// connection.connect((err) => {
+//   if (err) {
+//     console.error('Error connecting to the database:', err);
+//     process.exit(1);
+//   }
+//   console.log('Successfully connected to the database.');
+// });
 
 module.exports = connection;
