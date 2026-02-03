@@ -2,13 +2,18 @@
 
 A comprehensive complaint management system for colleges with separate dashboards for students, managers, and administrators.
 
+## Live Demo
+Frontend: https://digital-complaint-box-deployment-yz.vercel.app  
+Backend: https://digital-complaint-box-backend.onrender.com  
+
 ## Features
 
 ### Student Dashboard
-- Register and login to the system
+- Role-based authentication (Admin, Manager, Student)
 - View existing complaints
 - Submit new complaints
 - Track complaint status
+- Deployed using Vercel & Render
 
 ### Manager Dashboard
 - View assigned complaints
