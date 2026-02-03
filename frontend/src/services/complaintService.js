@@ -94,8 +94,11 @@ export const getComplaintStats = async () => {
 // };
 const complaintService = {
   createComplaint,
-  getComplaints,
-  updateStatus,
+  getStudentComplaints,
+  getManagerComplaints,
+  getAllComplaints,
+  updateComplaintStatus,
+  getComplaintStats
 };
 
 export default complaintService;
