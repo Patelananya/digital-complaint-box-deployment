@@ -25,15 +25,27 @@ const AdminDashboard = () => {
   const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (!user) {
-      navigate('/login');
-      return;
-    }
+  // useEffect(() => {
+  //   if (!user) {
+  //     navigate('/login');
+  //     return;
+  //   }
     
-    fetchDashboardData();
-    fetchManagers();
-  }, [user, navigate]);
+  //   fetchDashboardData();
+  //   fetchManagers();
+  // }, [user, navigate]);
+
+  useEffect(() => {
+  if (!user) {
+    navigate('/login');
+    return;
+  }
+
+  fetchDashboardData();
+  fetchManagers();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [user, navigate]);
+
 
   const fetchDashboardData = async () => {
     try {
