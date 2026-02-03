@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 //---------for deployment on Vercel--------
 //app.use(cors());
-const cors = require("cors");
+// const cors = require("cors");
 app.use(cors({
   origin: "*", // later you can restrict to Vercel domain
   methods: ["GET", "POST", "PUT", "DELETE"],
